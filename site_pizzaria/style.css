@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #fc6625;
+    --cor-do-texto: #474747;
+    --cor-destaque: #ffd700;
+    --cor-terceira: #f69100;
+    --cor-nav:#5a2a00;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    background-image: url(./img/Pizza3.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.pelicula{
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.805);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+header {
+    background-color: rgb(0,0,0);
+    color: white;
+}
+.logo {
+    width: 100px;
+    margin-top: 1rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+header p {
+    font-style: italic;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+nav {
+    background: var(--cor-secundaria);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--cor-nav);
+    display: inline-block;
+    padding: 2rem;
+
+}
+nav a:hover {
+    color: white;
+    background-color: var(--cor-terceira);
+    border-radius: 8px;
+}
+.conteudo {
+    
+    margin-top: 5rem;
+}
+.conteudo-title {
+    
+    margin-bottom: 3rem;
+    color: yellow;
+    font-size: 4rem;
+    text-shadow: 2px 2px 5px black,
+        0 0 15px rgba(255, 217, 0, 0.629);
+    
+}
+.informacoes {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    color: white;
+}
+.caixa {
+    background: rgba(2, 2, 2, 0.21);
+    box-shadow: 0 4px 30px rgba(0,0,0,0.8);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255,255,255,0.3);
+    width: 500px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    border-radius: 16px;
+    padding: 0 30px 0 30px;
+}
+
+.caixa-esquerda,
+.caixa-direita {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.caixa-title {
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+    
+
+
+.caixa-description {
+    font-size: 1.2rem;
+    color: var(--cor-primaria);
+    line-height: 1.2;
+    color: white;
+}
+
+.secao-cardapio {
+    margin: 2rem auto;
+    margin-top: 450px;
+    
+    max-width: 3000px;
+
+    text-align: center;
+}
+
+.secao-title {
+    font-style: italic;
+    font-size: 4.5rem;
+    color: var(--cor-destaque);
+    margin-bottom: 3rem;
+    text-align: center;
+    text-shadow: 2px 2px 5px black,
+        0 0 15px rgba(255, 217, 0, 0.629);
+}
+
+.secao-sabores {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 32px;
+
+    
+    background: rgba(10, 10, 10, 0.55);
+
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border: 2px solid rgba(255,255,255,0.35);
+    border-radius: 15px;
+
+   
+
+    padding: 45px;
+    
+    width: 1000px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.secao-sabores p{
+    margin: 10px 0;
+}
+
+.secao-container {
+    display: flex;          
+    justify-content: center;
+    gap: 2rem;              
+    flex-wrap: wrap;        
+    margin: 2rem auto;
+}
+
+.secao-contatos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+
+    margin-top: 650px;
+    margin-bottom: 100px;
+    
+}
+
+.contatos{
+    text-align: center;
+}
+
+
+
+.description-contatos {
+    width: 900px;
+    padding: 30px;
+    background: #07070770;
+    border-radius: 10px;
+    border: 0.2px solid rgba(255, 255, 255, 0.447);
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    
+}
+
+.description-contatos p{
+    font-size: 25px;
+    margin: 20px;
+}
+
+
+
+
+
+.secao-sobre-nos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;  
+    margin-top: 350px;
+    
+}
+
+.title-sobre-nos{
+    margin-top: 8px;
+    color:rgb(255, 183, 0);
+    font-size: 60px;
+
+}
+.description p {
+    font-size: 20px;
+    color: white;
+    width: 900px;
+    text-align: justify;
+    line-height: 1.5;
+    margin-bottom: 32px;
+    background: #07070770;
+    padding: 50px;
+    border-radius: 10px;
+    border: 0.2px solid rgba(255, 255, 255, 0.447);
+}
+
+
+.secao-sobre-nos p{
+    color: white;
+}
+
+.title-contatos{ 
+    margin-top: 10px;
+    color: var(--cor-destaque);
+    font-size: 60px;
+}
+    
+.contatos{
+    margin-bottom: 1rem;
+    color: var(--cor-destaque);
+    font-size: 2rem;
+    text-align: center;
+} 
+
+
+
+
+
+footer {
+    width: 100%;
+    background-color: rgba(250, 62, 0, 0); 
+    color: #fff;              
+    text-align: center;
+    padding: 1rem;
+    position: relative;          
+    bottom: 0;
+    left: 0;
+}
+
+
+
+
+
+
+
+
+
+
