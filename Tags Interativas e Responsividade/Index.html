@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+
+    <style>
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+
+
+    body{
+       background-color: #DCEBFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+
+    }
+
+    form{
+        background-color: white;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+        width: 300px;
+        flex-direction: column;
+        padding: 20px;
+        margin: 50px auto;
+        box-sizing: border-box;
+        border-radius: 10px;
+        border:  2px solid ;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        
+        
+    }
+
+
+    button:hover{
+        cursor: pointer;
+        background-color:  #1E3A8A;
+    }
+
+    button {
+    background-color: #1E40AF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+    h1{
+        color: #1E40AF;
+        margin: 0 auto;
+    }
+
+    select{
+    
+        margin-bottom: 5px;
+    }
+
+
+    
+    
+
+    </style>
+
+    <script>
+    function enviarFormulario(event) {
+        event.preventDefault();
+        const valorNome = document.getElementById('nome').value;
+        const valorEmail = document.getElementById('email').value;
+        const valorCursos = document.getElementById('cursos').value;
+        const valorPeriodo = document.getElementById('periodo').value;
+
+        const mensagem = document.getElementById("mensagem")
+
+        if(valorNome === " "){
+            mensagem.textContent = "Digite Seu Nome!";
+            return
+        }
+
+        if(senha.lenght < 8){
+            mensagem.textContent = "A senha Precisa Ter Pelo Menos 8 caracteres";
+            return
+        }
+        if(valorEmail === " "){
+            mensagem.textContent = "Digite Seu Email!";
+            return
+        }
+
+        if(valorCursos === " "){
+            mensagem.textContent = "Escolha Uma Opção De Curso!";
+            return
+        }
+
+        if(valorPeriodo === " "){
+            mensagem.textContent = "Voce Deve Selecionar Um Periodo";
+            return
+        }
+
+        if(!termos){
+            mensagem.textContent = "Acite os Termos e condições"
+        }
+
+        alert(`Nome Inserido: ${valorNome}\nEmail inserido: ${valorEmail}\nCurso Escolhido ${valorCursos} \nPeríodo escolhido: ${valorPeriodo}`);
+    }
+</script>
+</head>
+
+
+<body>
+
+    <form onsubmit="enviarFormulario(event)">
+
+        <h1>Gennera One</h1>
+
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome">
+
+
+        <label for="email">Email</label>
+
+        <input type="email" name="email" id="email">
+
+       
+
+        <label for="Senha"> Senha</label>
+
+        <input type="password" name="senha" id="senha">
+
+      
+        </select>
+        <label for="cursos">Cursos</label>
+        <select name="cursos" id="cursos">
+        <option value="">selecione a Opção</option>
+        <option value="Ciencias da Computação">Ciencias da Computação<option>
+        <option value="Educação Fisica">Educação Fisica</option>
+        <option value="Marketing">Marketing</option>
+        <option value="Filosofia">Filosofia</option>
+        </select>
+
+        
+
+        </select>
+        <label for="periodo">Periodo</label>
+        <select name="periodo" id="periodo">
+        <option value="">selecione a Opção</option>
+        <option value="Periodo 1">1 Periodo</option>
+        <option value="Periodo 2">2 Periodo</option>
+        <option value="Periodo 3">3 Periodo</option>
+        <option value="Periodo 4">4 Periodo</option>
+        <option value="Periodo 5">5 Periodo</option>
+        <option value="Periodo 6">6 Periodo</option>
+        <option value="Periodo 7">7 Periodo</option>
+        <option value="Periodo 8">8 Periodo</option>
+        </select>
+        
+
+        <label>
+            <input type="checkbox" name="termos" id="termos">
+            aceitos os termos e condições
+        </label>
+
+        <button type="submit">Enviar</button>
+
+        <p id="mensagem"></p>
+
+        
+        
+    </form>
+
+        
+        
+     </div>
+    </div>
+    
+
+
+</body>
+</html>
